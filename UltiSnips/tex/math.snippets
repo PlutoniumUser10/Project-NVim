@@ -28,13 +28,48 @@ _{$1}$0
 endsnippet
 
 context "math()"
-snippet ee "Exponentials"
+snippet ee "Exponentials" iA
 e^{$1}$0
+endsnippet
+
+context "math()"
+snippet mcal "mathcal" iA
+\mathcal{$1}$0
+endsnippet
+
+context "math()"
+snippet sq "\sqrt{}" iA
+\sqrt{${1:${VISUAL}}} $0
+endsnippet
+
+context "math()"
+snippet sum "sum" w
+\sum_{n=${1:1}}^{${2:\infty}} ${3:a_n z^n}
 endsnippet
 
 context "math()"
 snippet sympy "sympy block " w
 sympy $1 sympy$0
+endsnippet
+
+context "math()"
+snippet ler "\ab()" iA
+\ab(${1:${VISUAL}})$0
+endsnippet
+
+context "math()"
+snippet lr "{}" iA
+{${1:${VISUAL}}}$0
+endsnippet
+
+context "math()"
+snippet lsr[ "\ab[]" iA
+\ab[${1:${VISUAL}}]$0
+endsnippet
+
+context "math()"
+snippet hat "hat sym" iA
+\hat{$1}$0
 endsnippet
 
 priority 10000
